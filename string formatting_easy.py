@@ -1,3 +1,5 @@
+# User inputs a number 'n'. In return the program prints the Decimal, Octal, Hexadecimal and Binary conversions from 1 to n.
+
 def print_formatted(number):
     max_length_binary = len(str(bin(number).replace("0b", "")))
     def decimal(num):
