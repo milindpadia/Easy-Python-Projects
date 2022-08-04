@@ -2,12 +2,10 @@ students = []
 
 if __name__ == '__main__':
     for _ in range(int(input())):
-        temp = []
-        name = input()
+        name = [input()]
+        students.insert(_, name)
         score = float(input())
-        temp.append(name)
-        temp.append(score)
-        students.append(temp)
+        students[_].insert(1, score)
 
 # sorting students in ascending order based on grades
 sorted_list = sorted(students, key = lambda x: x[1])
