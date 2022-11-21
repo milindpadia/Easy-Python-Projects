@@ -18,14 +18,17 @@ no_of_patterns = 1
 no_of_dashes = (columns - 3) // 2
 
 for i in range(0, rows):
+    # printing row containing 'WELCOME'
     if i == (rows // 2):
         print(dash * ((columns - 7) // 2) + "WELCOME" + dash * ((columns - 7) // 2), end="")
+    # prints the rows above 'WELCOME'
     elif i < rows // 2:
         print(dash * no_of_dashes, end="")
         print(pattern * no_of_patterns, end="")
         print(dash * no_of_dashes, end="")
         no_of_patterns += 2
         no_of_dashes -= 3
+    # prints the rows below 'WELCOME'
     else:
         no_of_patterns -= 2
         no_of_dashes += 3
