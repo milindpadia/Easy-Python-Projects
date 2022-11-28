@@ -1,4 +1,4 @@
-# this program prints following pattern depending upon input
+# this program prints following pattern depending upon input size
 # --------e--------
 # ------e-d-e------
 # ----e-d-c-d-e----
