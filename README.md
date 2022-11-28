@@ -1,1 +1,1 @@
-Collection of easy python programs
+Collection of easy python projects
