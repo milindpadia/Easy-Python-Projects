@@ -14,6 +14,6 @@ for _ in roll_no_english_news_subscribers.split():
 for _ in roll_no_french_news_subscribers.split():
     list_french_news_subscribers.add(int(_))
 
-# print the number of subscribers who have atleast one subscription
-no_of_subscribers = list_english_news_subscribers & list_french_news_subscribers
+# print the number of subscribers who have only english news subscription
+no_of_subscribers = list_english_news_subscribers.difference(list_french_news_subscribers)
 print(len(no_of_subscribers))
